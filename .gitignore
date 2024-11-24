@@ -7,6 +7,10 @@
 *.VC.db
 *.VC.VC.opendb
 *.log
+*.rsp
+*.build.log
+*.vspscc
+*.vssscc
 
 # Compilación
 Debug/
@@ -26,11 +30,27 @@ Release/
 *.so
 *.a
 
+# NuGet
+packages/
+project.lock.json
+*.nuget.props
+*.nuget.targets
+
 # CMake
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
 
+# vcpkg
+vcpkg_installed/
+
 # Archivos temporales del sistema operativo
 *.tmp
 *.temp
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# VSCode
+.vscode/
