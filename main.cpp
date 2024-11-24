@@ -28,7 +28,7 @@ int main() {
 		if (al_get_next_event(event_queue, &event)) {
 			if (event.type == ALLEGRO_EVENT_JOYSTICK_BUTTON_DOWN) {
 				Command* command = handler->handle_input(event.joystick.button);
-				if (command) command->excecute();
+				if (command) command->execute();
 			}
 		}
 	}
